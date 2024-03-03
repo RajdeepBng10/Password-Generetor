@@ -1,0 +1,38 @@
+*{
+margin: 0;
+padding: 0;
+font-family: 'Times New Roman', Times, serif;
+box-sizing: border-box;
+}
+body{
+    background-color: rgba(1, 18, 33, 0.932);
+}
+.container{
+    margin-left:150px;
+    margin-top: 250px;
+}
+.bro{
+   background-color: white;
+   max-width: 440px;
+}
+#password{
+    height: 50px;
+    width: 400px;
+    font-size: 25px;
+    border: none;
+    
+}
+.hello{
+    height: 50px;
+    width: 200px;
+    color: white;
+    background-color: green;
+    font-size: 19px;
+    cursor: pointer;
+}
+.a1{
+    color: white;
+}
+.a2{
+    color: green;
+}
