@@ -1,3 +1,2 @@
-# Password-Generetor
-========================
-![image](https://github.com/satyamdeo19/Password-Generetor/assets/157494994/6696d072-3a50-4602-be9c-0c056b793f81)
+#password generetor
+![Screenshot 2024-03-07 203424](https://github.com/satyamdeo19/Password-Generetor/assets/157494994/3082766c-8e16-45df-8197-02e4cac62bf9)
