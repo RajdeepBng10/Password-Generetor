@@ -1,38 +1,92 @@
-*{
-margin: 0;
-padding: 0;
-font-family: 'Times New Roman', Times, serif;
-box-sizing: border-box;
-}
-body{
-    background-color: rgba(1, 18, 33, 0.932);
-}
-.container{
-    margin-left:150px;
-    margin-top: 250px;
-}
-.bro{
-   background-color: white;
-   max-width: 440px;
-}
-#password{
-    height: 50px;
-    width: 400px;
-    font-size: 25px;
-    border: none;
-    
-}
-.hello{
-    height: 50px;
-    width: 200px;
-    color: white;
-    background-color: green;
-    font-size: 19px;
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      transform: translateY(-50px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  .header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .header .a1 {
+    color: #2ecc71;
+    font-size: 30px;
+    margin: 0;
+  }
+  
+  .header .a2 {
+    color: #3498db;
+    font-size: 42px;
+    margin: 0;
+  }
+  
+  .bro {
+    position: relative;
+  }
+  
+  input[type="text"] {
+    width: calc(100% - 40px);
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: #555;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .fa-copy {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    color: #3498db;
     cursor: pointer;
-}
-.a1{
-    color: white;
-}
-.a2{
-    color: green;
-}
+    transition: color 0.3s ease;
+  }
+  
+  .fa-copy:hover {
+    color: #2ecc71;
+  }
+  
+  button.hello {
+    width: 100%;
+    padding: 10px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  button.hello:hover {
+    background-color: #2ecc71;
+  }
+  
