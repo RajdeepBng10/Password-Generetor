@@ -3,15 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Random Password Generetor</title>
+    <title>Random Password Generator</title>
     <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
+    
   </head>
   <body>
-    
     <div class="container">
       <div class="header">
         <h1 class="a1">Generate a</h1>
@@ -25,32 +25,13 @@
           name="password"
           placeholder="password"
         />
-        <i class="fa-regular fa-copy"></i>
+        <i class="fa-regular fa-copy" onclick="addEventListener"></i>
       </div>
       <br />
       <button class="hello" onclick="createpassword()">
         Generate Password
       </button>
     </div>
-    <script>
-        const passwordbox = document.getElementById("password");
-        const length = 12;
-        const uppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-        const lowercase = "abcdefghijklmnopqrstuvwxyz";
-        const number = "1234567890";
-        const character = "!~#$%^&*()_+";
-        const allchars = "1heg2itr@%^&%3";
-        function createpassword() {
-          let password = "";
-          password += uppercase[Math.floor(Math.random() * uppercase.length)];
-          password += lowercase[Math.floor(Math.random() * lowercase.length)];
-          password += number[Math.floor(Math.random() * number.length)];
-          password += character[Math.floor(Math.random() * character.length)];
-          while (length > password.length) {
-            password += allchars[Math.floor(Math.random() * allchars.length)];
-          }
-          passwordbox.value = password;
-        }
-      </script>
   </body>
+  <script src="script.js"></script>
 </html>
